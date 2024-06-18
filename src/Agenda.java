@@ -1,5 +1,3 @@
-import java.util.ArrayList;
-import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -21,15 +19,15 @@ public class Agenda {
       if(!existeContacto(contacto)){
         if(longitudTelefono == 10){
           mapaContactos.put(contacto.getNombre(), contacto);
-          System.out.println("Contacto agregado con exito");
+          System.out.println("Contacto agregado con exito.");
         }else{
-          System.out.println("Error, debe ingresar un teléfono de 10 dígitos");
+          System.out.println("Error, debe ingresar un teléfono de 10 dígitos.");
         }
       }else{
-        System.out.println("Error, este contacto ya existe en la agenda");
+        System.out.println("Error, este contacto ya existe en la agenda.");
       }
     }else{
-      System.out.println("Error, no hay espacio disponible en la agenda");
+      System.out.println("Error, no hay espacio disponible en la agenda.");
     }
   }
 
@@ -41,7 +39,7 @@ public class Agenda {
         return c;
       }
     }
-    System.out.println("No se encontro el contacto en la agenda");
+    System.out.println("No se encontró el contacto en la agenda.");
     return null;
   }
 

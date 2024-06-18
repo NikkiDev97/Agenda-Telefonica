@@ -27,6 +27,6 @@ public class Contactos {
     public String toString() {
         return
                 "Nombre: " + nombre + '\n' +
-                "Telefono: " + telefono;
+                "Teléfono: " + telefono;
     }
 }

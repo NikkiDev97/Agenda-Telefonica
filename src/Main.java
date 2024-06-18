@@ -1,46 +1,25 @@
 import java.util.Scanner;
-
-import static java.lang.System.exit;
-
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
   public static void main(String[] args) {
-    /*Contactos contactoNuevo = new Contactos("Pepe", 3153379879L);
-    Agenda nuevaLista = new Agenda(5);
-    nuevaLista.agregarContacto(contactoNuevo);
-
-    Contactos contacto2 = new Contactos("Pepelin", 1234567890);
-    nuevaLista.agregarContacto(contacto2);
-
-    Contactos contacto3 = new Contactos("Ana", 1234567890);
-    nuevaLista.agregarContacto(contacto3);
-
-    nuevaLista.listarContactos();
-
-    System.out.println("-- SEPARACION----");
-    nuevaLista.eliminarContacto(contacto2);
-    nuevaLista.listarContactos();
-    */
-
 
     Scanner scanner = new Scanner(System.in);
 
     int opcion;
-    System.out.println("Ingrese la cantidad maxima de contactos a guardar");
+    System.out.println("Ingrese la cantidad máxima de contactos a guardar");
     int capacidadMaxima = scanner.nextInt();
     scanner.nextLine();
+
     Agenda agenda = new Agenda(capacidadMaxima);
 
     do {
-      System.out.println("\n Menu:");
+      System.out.println("\n Menú:");
       System.out.println("1. Agregar Contacto");
       System.out.println("2. Listar Contactos");
       System.out.println("3. Buscar Contacto");
       System.out.println("4. Eliminar Contacto");
       System.out.println("5. Verificar Espacio Disponible");
       System.out.println("6. Salir");
-      System.out.println("Escoge una Opcion: ");
+      System.out.println("Escoge una Opción: ");
 
       opcion = Integer.valueOf(scanner.nextLine());
 
@@ -48,29 +27,27 @@ public class Main {
         case 1:
           System.out.println("Nombre: ");
           String nombre = scanner.nextLine();
-
-          System.out.println("Telefono: ");
+          System.out.println("Teléfono: ");
           long telefono = Long.valueOf(scanner.nextLine());
-
           Contactos nuevoContacto = new Contactos(nombre, telefono);
           agenda.agregarContacto(nuevoContacto);
           break;
 
         case 2:
+          System.out.println("----LISTA DE CONTACTOS-----");
           agenda.listarContactos();
           break;
 
         case 3:
-          System.out.println("Ingrese el nombre del contacto que desea buscar");
+          System.out.println("Ingrese el nombre del contacto que desea buscar: ");
           String name = scanner.nextLine();
 
           System.out.println(agenda.buscarContacto(name));
           break;
 
         case 4:
-          System.out.println("Ingrese el nombre del contacto que desea buscar");
+          System.out.println("Ingrese el nombre del contacto que desea eliminar: ");
           String nameDelete = scanner.nextLine();
-
           agenda.eliminarContacto(agenda.buscarContacto(nameDelete));
           break;
 
@@ -85,11 +62,11 @@ public class Main {
           break;
 
         case 6:
-          System.out.println("Adios");
+          System.out.println("¡Adios!");
           break;
 
         default:
-          System.out.println("Opción no valida");
+          System.out.println("Opción no valida.");
       }
 
     }while(opcion != 6);
