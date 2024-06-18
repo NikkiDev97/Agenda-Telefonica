@@ -1,3 +1,5 @@
+package AgendaTelefonica.modelos;
+
 import java.util.HashMap;
 import java.util.Map;
 
@@ -9,7 +11,6 @@ public class Agenda {
     this.capacidadMaxima = capacidadMaxima;
     this.mapaContactos = new HashMap<>();
   }
-
 
   //Métodos
 

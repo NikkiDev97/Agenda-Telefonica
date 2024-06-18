@@ -1,3 +1,5 @@
+package AgendaTelefonica.modelos;
+
 public class Contactos {
     private String nombre;
     private long telefono;

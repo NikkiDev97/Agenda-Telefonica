@@ -5,7 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0b65c6c5-b011-4c4b-9b32-f02428af6ea3" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Agenda Telefonica.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Agenda Telefonica.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Agenda.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AgendaTelefonica/modelos/Agenda.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Contactos.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -32,15 +36,66 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/ASUS/Desktop/Hackaton 2/Agenda Telefonica/src/Main.java&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "Downloaded.Files.Path.Enabled": "false",
+    "JUnit.AgendaTest.agregarContactoTest.executor": "Run",
+    "JUnit.AgendaTest.eliminarContacto.executor": "Run",
+    "JUnit.AgendaTest.executor": "Run",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "onboarding.tips.debug.path": "C:/Users/ASUS/Desktop/Hackaton 2/Agenda Telefonica/src/Main.java",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
-}</component>
+}]]></component>
+  <component name="RunManager">
+    <configuration name="AgendaTest.agregarContactoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Agenda Telefonica" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="AgendaTelefonica.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="AgendaTelefonica.test" />
+      <option name="MAIN_CLASS_NAME" value="AgendaTelefonica.test.AgendaTest" />
+      <option name="METHOD_NAME" value="agregarContactoTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AgendaTest.eliminarContacto" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Agenda Telefonica" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="AgendaTelefonica.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="AgendaTelefonica.test" />
+      <option name="MAIN_CLASS_NAME" value="AgendaTelefonica.test.AgendaTest" />
+      <option name="METHOD_NAME" value="eliminarContacto" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.AgendaTest.eliminarContacto" />
+        <item itemvalue="JUnit.AgendaTest.agregarContactoTest" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">

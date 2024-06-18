@@ -1,3 +1,6 @@
+import AgendaTelefonica.modelos.Agenda;
+import AgendaTelefonica.modelos.Contactos;
+
 import java.util.Scanner;
 public class Main {
   public static void main(String[] args) {
@@ -14,7 +17,7 @@ public class Main {
     do {
       System.out.println("\n Menú:");
       System.out.println("1. Agregar Contacto");
-      System.out.println("2. Listar Contactos");
+      System.out.println("2. Listar Agenda Telefónica");
       System.out.println("3. Buscar Contacto");
       System.out.println("4. Eliminar Contacto");
       System.out.println("5. Verificar Espacio Disponible");
