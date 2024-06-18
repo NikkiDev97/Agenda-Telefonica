@@ -4,14 +4,12 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Agenda {
-  private ArrayList<Contactos> listaContactos;
   private Map<String, Contactos> mapaContactos;
   private int capacidadMaxima;
 
   public Agenda(int capacidadMaxima) {
     this.capacidadMaxima = capacidadMaxima;
     this.mapaContactos = new HashMap<>();
-    this.listaContactos = new ArrayList<>();
   }
 
 
@@ -22,8 +20,8 @@ public class Agenda {
     if(!agendaLlena()){
       if(!existeContacto(contacto)){
         if(longitudTelefono == 10){
-          listaContactos.add(contacto);
           mapaContactos.put(contacto.getNombre(), contacto);
+          System.out.println("Contacto agregado con exito");
         }else{
           System.out.println("Error, debe ingresar un teléfono de 10 dígitos");
         }
@@ -37,11 +35,18 @@ public class Agenda {
 
 
   public Contactos buscarContacto(String nombre) {
-    return mapaContactos.get(nombre);
+
+    for (Contactos c : mapaContactos.values()){
+      if (c.getNombre().equalsIgnoreCase(nombre)){
+        return c;
+      }
+    }
+    System.out.println("No se encontro el contacto en la agenda");
+    return null;
   }
 
   public void listarContactos() {
-    for (Contactos c : listaContactos ){
+    for (Contactos c : mapaContactos.values()){
       System.out.println(c);
       System.out.println("------");
     }
@@ -56,17 +61,13 @@ public class Agenda {
   }
 
   public boolean agendaLlena() {
-    if ((capacidadMaxima - mapaContactos.size()) == 0) {
-      return true;
-    }else {
-      return false;
-    }
+    return (capacidadMaxima - mapaContactos.size()) == 0;
   }
 
   public void eliminarContacto(Contactos contacto){
     if(existeContacto(contacto)){
-      listaContactos.remove(contacto);
       mapaContactos.remove(contacto.getNombre());
+      System.out.println("Contacto eliminado con éxito");
     }else{
       System.out.println("Error: el contacto que desea eliminar no existe en la agenda");
     }
