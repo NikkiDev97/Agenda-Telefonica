@@ -20,7 +20,7 @@ public class Agenda {
   public void agregarContacto(Contactos contacto) {
     int longitudTelefono = Long.toString(contacto.getTelefono()).length();
     if(!agendaLlena()){
-      if(!existeContacto(contacto.getNombre())){
+      if(!existeContacto(contacto)){
         if(longitudTelefono == 10){
           listaContactos.add(contacto);
           mapaContactos.put(contacto.getNombre(), contacto);
@@ -45,11 +45,10 @@ public class Agenda {
       System.out.println(c);
       System.out.println("------");
     }
-    System.out.println(mapaContactos);
   }
 
-  public boolean existeContacto(String nombre) {
-    return mapaContactos.containsKey(nombre);
+  public boolean existeContacto(Contactos contacto) {
+    return mapaContactos.containsValue(contacto);
   }
 
   public int espacioLibres() {
@@ -64,8 +63,13 @@ public class Agenda {
     }
   }
 
-  public void eliminarContacto(){
-
+  public void eliminarContacto(Contactos contacto){
+    if(existeContacto(contacto)){
+      listaContactos.remove(contacto);
+      mapaContactos.remove(contacto.getNombre());
+    }else{
+      System.out.println("Error: el contacto que desea eliminar no existe en la agenda");
+    }
   }
 }
 

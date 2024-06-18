@@ -13,5 +13,10 @@ public class Main {
     nuevaLista.agregarContacto(contacto3);
 
     nuevaLista.listarContactos();
+
+    System.out.println("-- SEPARACION----");
+    nuevaLista.eliminarContacto(contacto2);
+    nuevaLista.listarContactos();
+
   }
 }
