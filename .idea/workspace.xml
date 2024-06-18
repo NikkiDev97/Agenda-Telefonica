@@ -5,12 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0b65c6c5-b011-4c4b-9b32-f02428af6ea3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AgendaTelefonica/modelos/CustomExceptions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AgendaTelefonica/modelos/Helper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Agenda Telefonica.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Agenda Telefonica.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Agenda.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AgendaTelefonica/modelos/Agenda.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Contactos.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AgendaTelefonica/modelos/Agenda.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AgendaTelefonica/modelos/Agenda.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,27 +34,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "Downloaded.Files.Path.Enabled": "false",
-    "JUnit.AgendaTest.agregarContactoTest.executor": "Run",
-    "JUnit.AgendaTest.eliminarContacto.executor": "Run",
-    "JUnit.AgendaTest.executor": "Run",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "onboarding.tips.debug.path": "C:/Users/ASUS/Desktop/Hackaton 2/Agenda Telefonica/src/Main.java",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;JUnit.AgendaTest.agregarContactoTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AgendaTest.eliminarContacto.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AgendaTest.executor&quot;: &quot;Run&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/ASUS/Desktop/Hackaton 2/Agenda Telefonica/src/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
-  <component name="RunManager">
+}</component>
+  <component name="RunManager" selected="JUnit.AgendaTest.agregarContactoTest">
     <configuration name="AgendaTest.agregarContactoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Agenda Telefonica" />
       <extension name="coverage">
@@ -91,8 +89,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.AgendaTest.eliminarContacto" />
         <item itemvalue="JUnit.AgendaTest.agregarContactoTest" />
+        <item itemvalue="JUnit.AgendaTest.eliminarContacto" />
       </list>
     </recent_temporary>
   </component>
